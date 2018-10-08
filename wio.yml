@@ -2,17 +2,29 @@ type: pkg
 
 project:
   name: cosa-packet
-  version: 0.0.1
+  version: 1.0.0
+  organization: Waterloop
+  description: canbus packet packaging
+  author: Quinton Lucyk <quinton_lucyk@yahoo.com> (https://github.com/quintonlucyk)
   keywords:
   - wio
   - pkg
+  - c++
+  - waterloop
+  - packet
+  - cosa
+  - canbus
   compile_options:
     wio_version: 0.5.1
-    default_target: tests
 
 targets:
-  tests:
-    src: tests
+  receiver:
+    src: tests/receiver
+    platform: AVR
+    framework: cosa
+    board: uno
+  sender:
+    src: tests/sender
     platform: AVR
     framework: cosa
     board: uno
