@@ -20,12 +20,12 @@ project:
 targets:
   receiver:
     src: tests/receiver
-    platform: AVR
+    platform: avr
     framework: cosa
     board: uno
   sender:
     src: tests/sender
-    platform: AVR
+    platform: avr
     framework: cosa
     board: uno
 
