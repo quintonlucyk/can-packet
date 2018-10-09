@@ -1,4 +1,4 @@
-#include "../include/canbus-packet.h"
+#include "canbus-packet.h"
 
 using namespace wlp;
 
