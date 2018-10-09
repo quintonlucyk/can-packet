@@ -1,7 +1,7 @@
 # cosa-packet
 
 This is a `wio` package for
-- platform(s): AVR
+- platform(s): avr
 - framework(s): cosa
 
 To include this package as a dependency:
