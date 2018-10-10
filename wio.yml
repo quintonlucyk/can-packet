@@ -29,3 +29,7 @@ targets:
     framework: cosa
     board: uno
 
+dependencies:
+  mcp2515-driver:
+    version: 1.0.0
+
