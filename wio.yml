@@ -2,7 +2,7 @@ type: pkg
 
 project:
   name: can-packet
-  version: 1.0.0
+  version: 1.0.1
   organization: Waterloop
   description: CAN Bus packet type
   author: Quinton Lucyk <quinton_lucyk@yahoo.com> (https://github.com/quintonlucyk)

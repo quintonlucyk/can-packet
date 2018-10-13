@@ -7,6 +7,9 @@ namespace wlp {
 
     class Packet {
     public:
+        explicit Packet(uint32_t id);
+
+        Packet();
         Packet(uint32_t id, uint64_t packet);
         Packet(uint32_t id, uint32_t data, uint32_t type);
         Packet(uint32_t id, float data, uint32_t type);

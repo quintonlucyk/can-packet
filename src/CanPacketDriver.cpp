@@ -11,4 +11,5 @@ uint8_t packet::send(MCP2515 &bus, Packet &p) {
 void packet::read(MCP2515 &bus, Packet &p) {
     uint8_t *pBuf = reinterpret_cast<uint8_t *>(&p.packet());
     bus.read_buffer(sizeof(uint64_t), pBuf);
+    p.id() = bus.get_id();
 }

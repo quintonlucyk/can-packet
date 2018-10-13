@@ -5,6 +5,11 @@ static_assert(sizeof(float) == sizeof(uint32_t),
 
 using namespace wlp;
 
+Packet::Packet() {}
+
+Packet::Packet(uint32_t id) :
+    m_id(id) {}
+
 Packet::Packet(uint32_t id, uint64_t packet) :
     m_id(id),
     m_packet(packet) {}
