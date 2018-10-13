@@ -1,11 +1,13 @@
 type: pkg
 
 project:
-  name: cosa-packet
+  name: can-packet
   version: 1.0.0
   organization: Waterloop
-  description: canbus packet packaging
+  description: CAN Bus packet type
   author: Quinton Lucyk <quinton_lucyk@yahoo.com> (https://github.com/quintonlucyk)
+  contributors:
+  - Jeff Niu <me@jeffniu.com> (http://jeffniu.com)
   keywords:
   - wio
   - pkg
