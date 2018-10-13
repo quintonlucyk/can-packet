@@ -16,18 +16,12 @@ project:
   - canbus
   compile_options:
     wio_version: 0.5.1
+    default_target: tests
 
 targets:
-  receiver:
-    src: tests/receiver
-    platform: avr
-    framework: cosa
-    board: uno
-  sender:
-    src: tests/sender
-    platform: avr
-    framework: cosa
-    board: uno
+  tests:
+    src: tests
+    platform: native
 
 dependencies:
   mcp2515-driver:
