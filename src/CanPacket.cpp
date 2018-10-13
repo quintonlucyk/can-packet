@@ -5,9 +5,9 @@ static_assert(sizeof(float) == sizeof(uint32_t),
 
 using namespace wlp;
 
-Packet::Packet(float data, uint32_t dataType) :
+Packet::Packet(float data, uint32_t data_type) :
     m_float(data),
-    m_dataType(dataType) {}
+    m_data_type(data_type) {}
 
 Packet::Packet(uint64_t packet) :
     m_packet(packet) {}
@@ -20,12 +20,12 @@ const uint32_t &Packet::data() const {
     return m_data;
 }
 
-uint32_t &Packet::dataType() {
-    return m_dataType;
+uint32_t &Packet::data_type() {
+    return m_data_type;
 }
 
-const uint32_t &Packet::dataType() const {
-    return m_dataType;
+const uint32_t &Packet::data_type() const {
+    return m_data_type;
 }
 
 uint64_t &Packet::packet() {
