@@ -7,37 +7,16 @@ namespace wlp {
 
     class Packet {
     public:
-        explicit Packet(uint32_t id);
+        Packet(uint32_t id, uint8_t * data, uint8_t len);
 
-        Packet();
-        Packet(uint32_t id, uint64_t packet);
-        Packet(uint32_t id, uint32_t data, uint32_t type);
-        Packet(uint32_t id, float data, uint32_t type);
-
-        uint32_t &id();
-        uint32_t &data();
-        uint32_t &type();
-        uint64_t &packet();
-        float &dataf();
-
-        const uint32_t &id() const;
-        const uint32_t &data() const;
-        const uint32_t &type() const;
-        const uint64_t &packet() const;
-        const float &dataf() const;
+        uint32_t id();
+        uint8_t * data();
+        uint8_t len();
 
     private:
         uint32_t m_id;
-        union {
-            struct {
-                union {
-                    uint32_t m_data;
-                    float m_float;
-                };
-                uint32_t m_type;
-            };
-            uint64_t m_packet;
-        };
+        uint8_t m_data[8];
+        uint8_t m_len;
     };
 
 }
